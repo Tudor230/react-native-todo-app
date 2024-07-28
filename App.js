@@ -1,6 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { Text, View } from "react-native";
-import ToDo from "./src/components/ToDo";
+import ToDo from "./components/ToDo";
+import Form from "./components/Form";
 
 export default function App() {
   return (
@@ -14,6 +15,9 @@ export default function App() {
       </View>
       <View className="flex-1">
         <Text>Test</Text>
+      </View>
+      <View className="h-auto mb-16 mx-3">
+        <Form />
       </View>
       <StatusBar style="auto" />
     </View>
