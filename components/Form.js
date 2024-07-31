@@ -2,7 +2,7 @@ import { Pressable, Text, TextInput, View } from "react-native";
 import { useState } from "react";
 import { AntDesign } from "@expo/vector-icons";
 
-export default function Form() {
+export default function Form({ save }) {
   const [text, setText] = useState("");
   return (
     <View className="flex-row">
@@ -14,7 +14,7 @@ export default function Form() {
           onChangeText={setText}
         />
       </View>
-      <Pressable className="ml-6 mr-2">
+      <Pressable className="ml-6 mr-2" onPress={() => save(text)}>
         <AntDesign name="pluscircle" size={38} color="black" />
       </Pressable>
     </View>
