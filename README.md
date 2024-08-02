@@ -147,7 +147,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-[**Return**](#-quick-links)
+[**Return**](#quick-links)
 
 ---
 
