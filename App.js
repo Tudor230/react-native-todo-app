@@ -55,7 +55,7 @@ export default function App() {
       <View className="flex-1 mx-3">
         <Completed array={completed} />
       </View>
-      <View className="h-auto mb-12 mx-3">
+      <View className="h-12 mb-12 mx-3">
         <Form save={save} />
       </View>
       <StatusBar style="auto" />

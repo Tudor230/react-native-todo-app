@@ -21,7 +21,7 @@ export const getCompleted = async () => {
 
 export const storeData = async (value) => {
   try {
-    const currentData = await getData();
+    const currentData = await getTODO();
     currentData.push(value);
     await AsyncStorage.setItem(keyTODO, JSON.stringify(currentData));
   } catch (e) {
@@ -31,7 +31,7 @@ export const storeData = async (value) => {
 
 export const removeData = async (index) => {
   try {
-    let currentData = await getData();
+    let currentData = await getTODO();
     currentData.splice(index, 1);
     await AsyncStorage.setItem(keyTODO, JSON.stringify(currentData));
   } catch (e) {

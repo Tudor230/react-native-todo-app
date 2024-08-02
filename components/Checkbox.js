@@ -4,14 +4,11 @@ import { useEffect, useState } from "react";
 
 export default function Checkbox({ move, index, completed }) {
   const isCompleted = completed || false;
-  const [checked, setChecked] = useState(isCompleted);
-  useEffect(() => {
-    if (checked && !isCompleted) move(index);
-  }, [checked]);
+  const checked = isCompleted;
   return (
     <Pressable
       onPress={() => {
-        setChecked(!checked);
+        move(index);
       }}
     >
       {isCompleted ? (
